@@ -1,0 +1,46 @@
+FOLLOW(<program>) = { $ }
+FOLLOW(<declaration>) = { loop export long $ unsigned if [+-]? default int protected bool char true float [a-zA-Z] signed short double class return void static magar try while typename agar goto break false typeid public asm register namespace struct else operator sizeof this switch new auto enum throw explicit const union private catch case using extern typedef continue virtual do inline for volatile friend delete mutable _ [ }
+FOLLOW(<PlusOp>) = { $ [a-zA-Z] _ [+-]? [ }
+FOLLOW(<program>') = { $ }
+FOLLOW(<statement>) = { loop unsigned if [+-]? default int bool protected char true float [a-zA-Z] signed short double class return void export long static magar try while typename agar goto break false typeid public asm register namespace struct else operator sizeof this switch new auto enum throw explicit const union private catch case using extern typedef continue virtual do inline for volatile friend delete mutable _ [ $ }
+FOLLOW(<PlusOp>') = { $ [a-zA-Z] [+-]? _ [ }
+FOLLOW(<statement>') = { loop [+-]? default int unsigned if protected bool char [a-zA-Z] float true signed short double void return class long export static magar while typename try goto agar typeid false break struct namespace register public asm else sizeof operator this new switch auto enum throw explicit union const catch private case using extern continue typedef virtual inline do for friend volatile delete mutable _ [ $ }
+FOLLOW(<conditional>) = { loop export long $ unsigned if [+-]? default int protected bool char true float [a-zA-Z] signed short double class return void static magar try while typename agar goto break false typeid public asm register namespace struct else operator sizeof this switch new auto enum throw explicit const union private catch case using extern typedef continue virtual do inline for volatile friend delete mutable _ [ }
+FOLLOW(<keyword>') = { true float [a-zA-Z] [+-]? default int if unsigned _ loop $ long export protected bool char signed short double void return class static magar while typename try goto agar typeid false break struct namespace register public asm else sizeof operator this new switch auto enum throw explicit union const catch private case using extern continue typedef virtual inline do for friend volatile delete mutable [ }
+FOLLOW(<type>') = { true float [a-zA-Z] [+-]? default int if unsigned _ loop $ long export protected bool char signed short double void return class static magar while typename try goto agar typeid false break struct namespace register public asm else sizeof operator this new switch auto enum throw explicit union const catch private case using extern continue typedef virtual inline do for friend volatile delete mutable [ }
+FOLLOW(<keyword>) = { true float [a-zA-Z] if unsigned [+-]? default int _ loop export long $ protected bool char signed short double class return void static magar try while typename agar goto break false typeid public asm register namespace struct else operator sizeof this switch new auto enum throw explicit const union private catch case using extern typedef continue virtual do inline for volatile friend delete mutable [ }
+FOLLOW(<rest_identifier_tail>') = { >> : < != $ =:= [ ε - = / + * && % || }
+FOLLOW(<type>) = { true float [a-zA-Z] if unsigned [+-]? default int _ loop export long $ protected bool char signed short double class return void static magar try while typename agar goto break false typeid public asm register namespace struct else operator sizeof this switch new auto enum throw explicit const union private catch case using extern typedef continue virtual do inline for volatile friend delete mutable [ }
+FOLLOW(<loop>) = { loop export long $ unsigned if [+-]? default int protected bool char true float [a-zA-Z] signed short double class return void static magar try while typename agar goto break false typeid public asm register namespace struct else operator sizeof this switch new auto enum throw explicit const union private catch case using extern typedef continue virtual do inline for volatile friend delete mutable _ [ }
+FOLLOW(<term>) = { < != $ ε = - / + : >> * && % || }
+FOLLOW(<statements>) = { } }] $ }
+FOLLOW(<MinusOp>') = { $ [a-zA-Z] [+-]? _ [ }
+FOLLOW(<MinusOp>) = { $ [a-zA-Z] _ [+-]? [ }
+FOLLOW(<operator>') = { $ [a-zA-Z] [+-]? _ [ }
+FOLLOW(<operator>) = { $ [a-zA-Z] _ [+-]? [ }
+FOLLOW(<assignment>) = { loop export long $ unsigned if [+-]? default int protected bool char true float [a-zA-Z] signed short double class return void static magar try while typename agar goto break false typeid public asm register namespace struct else operator sizeof this switch new auto enum throw explicit const union private catch case using extern typedef continue virtual do inline for volatile friend delete mutable _ [ }
+FOLLOW(<return_statement>) = { loop export long $ unsigned if [+-]? default int protected bool char true float [a-zA-Z] signed short double class return void static magar try while typename agar goto break false typeid public asm register namespace struct else operator sizeof this switch new auto enum throw explicit const union private catch case using extern typedef continue virtual do inline for volatile friend delete mutable _ [ }
+FOLLOW(<function_call>) = { loop export long $ unsigned if [+-]? default int protected bool char true float [a-zA-Z] signed short double class return void static magar try while typename agar goto break false typeid public asm register namespace struct else operator sizeof this switch new auto enum throw explicit const union private catch case using extern typedef continue virtual do inline for volatile friend delete mutable _ [ }
+FOLLOW(<equalOpRest>) = { $ [a-zA-Z] _ [+-]? [ }
+FOLLOW(<arguments>) = { $ ]: }
+FOLLOW(<expression>) = { <rest_arguments> ] $ : }
+FOLLOW(<rest_expression>') = { <rest_arguments> ] $ : }
+FOLLOW(<start_identifier>') = { 1 2 3 4 5 6 7 8 9 0 _ [a-zA-Z] ε }
+FOLLOW(<rest_expression>) = { ] <rest_arguments> $ : }
+FOLLOW(<start_identifier>) = { 1 2 3 4 5 6 7 8 9 0 _ [a-zA-Z] ε }
+FOLLOW(<identifier>) = { >> : < != $ =:= [ ε - = / + * && % || }
+FOLLOW(<greaterOp>) = { $ [a-zA-Z] _ [+-]? [ }
+FOLLOW(<term>') = { $ != < ε - = / + >> : * && % || }
+FOLLOW(<identifier_tail>) = { >> : $ != < =:= [ ε - = / + * && % || }
+FOLLOW(<rest_identifier_tail>) = { >> : $ != < =:= [ ε - = / + * && % || }
+FOLLOW(<identifier_tail>') = { >> : < != $ =:= [ ε - = / + * && % || }
+FOLLOW(<letter>) = { 4 $ 1 2 3 5 6 7 8 9 0 _ [a-zA-Z] ε }
+FOLLOW(<number>) = { < != $ ε = - / + : >> * && % || }
+FOLLOW(<digit>) = { 4 $ 1 2 3 5 6 7 8 9 0 _ [a-zA-Z] ε }
+FOLLOW(<colonOp>') = { $ [a-zA-Z] [+-]? _ [ }
+FOLLOW(<colonOp>) = { $ [a-zA-Z] _ [+-]? [ }
+FOLLOW(<punctuation>) = { $ }
+FOLLOW(<equalOpRest>') = { $ [a-zA-Z] [+-]? _ [ }
+FOLLOW(<greaterOp>') = { $ [a-zA-Z] [+-]? _ [ }
+FOLLOW(<digit>') = { $ 4 1 2 3 5 6 7 8 9 0 _ [a-zA-Z] ε }
+FOLLOW(<punctuation>') = { $ }

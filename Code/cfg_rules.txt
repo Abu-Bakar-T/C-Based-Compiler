@@ -1,0 +1,30 @@
+<program> -> <statements> | <statement> | <declaration> | <assignment> | <loop> | <conditional> | <return_statement> | <function_call> | <arguments> | <expression> | <term> | <identifier> | <letter> |<number> | <digit> | <operator> | <punctuation> | <type>
+<statements> -> <statement> <statements>
+<statement> -> <declaration> | <type> | <assignment> | <expression> : | <loop> | <conditional> | <return_statement> | <function_call> 
+<declaration> -> <type> <identifier> :
+<assignment> -> <identifier> =:= <expression> :
+<loop> -> loop [ <expression> ] { <statements> }
+<conditional> -> if [ <expression> ] { <statements> } [else { <statements> }]
+<return_statement> -> return <expression> :
+<function_call> -> <identifier> [ <arguments> ]:
+<arguments> -> <expression> <rest_arguments>
+<rest_arguments> || <arguments> | ε
+<expression> -> <term> <rest_expression> 
+<rest_expression> -> ε | <operator> <expression>
+<term> -> <identifier> | <number> | [ <expression> ]
+<identifier> -> <start_identifier> <identifier_tail>
+<start_identifier> -> <letter> | _
+<identifier_tail> -> _ <rest_identifier_tail> | <letter> <rest_identifier_tail> | <digit> <rest_identifier_tail> | ε
+<rest_identifier_tail> -> <identifier_tail> | ε
+<letter> -> [a-zA-Z]
+<number> -> [+-]? <digit>+ [ . <digit>+] [ e [+-]? <digit>+]
+<digit> -> 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0
+<operator> -> != | < <greaterOp> | = <equalOpRest> | * | + <PlusOp> | / | - <MinusOp> | >> | && | % | : <colonOp> | ||
+<equalOpRest> -> := | = | + | > | < | ε
+<MinusOp> -> - | ε
+<PlusOp> -> + | ε
+<colonOp> -> : | ε
+<greaterOp> -> > | < | ε
+<punctuation> -> [ | { | < | > | } | ]
+<type> -> int | float | char | bool | double | void | long | short | <keyword>
+<keyword> -> loop | agar | magar | asm | else | new | this | auto | enum | operator | throw | bool | explicit | private | true | break | export | protected | try | case | extern | public | typedef | catch | false | register | typeid | char | float | typename | class | for | return | union | const | friend | short | unsigned | goto | signed | using | continue | if | sizeof | virtual | default | inline | static | void | delete | int | volatile | do | long | struct | double | mutable | switch | while | namespace

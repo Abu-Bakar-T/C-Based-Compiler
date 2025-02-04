@@ -1,0 +1,51 @@
+!= <> =:=  == * + / - >> << ++ =+ && || => =< % : :: -- += -= %= *= = ++ +++ ++++ **
+[ { <  > } ] 
+.12 .3151+E13 0.1 123 10510 3.413E-13 3.41E10
+
+i  abc rate hello 1rate
+loop {
+    int _x = 10; // 
+    int _rate2 = 5;
+    float _rate = 3.14;
+    bool _status = true;
+
+    if (_status) {
+        for (int i = 0; i < 5; ++i) {
+            _rate += 0.1;
+            _rate2 *= 2;
+        }
+        double _value = 3.43433E+13;
+        _value = -2.56E-4;
+        _value += 1.0;
+    }
+
+    int _result = 10 + 20;
+    _result /= 5;
+    _result = 100;
+    _result %= 3;
+
+    if (_status && _result > 0) {
+        _x += 1; 
+    }
+
+    while (_x > 0) {
+        _x--; 
+        if (_x % 2 == 0) { 
+            break;
+        }
+    }
+
+    
+    switch (_result) {
+        case 0:
+            continue;
+        case 1:
+            break;
+        default:
+            _result = 42;
+    }
+
+    _result = _x << 2; 
+    _result = _x >> 1;
+    _result == 5;
+}

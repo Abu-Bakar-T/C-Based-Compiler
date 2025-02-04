@@ -1,0 +1,860 @@
+Token:                != $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <operator>
+            |====> <operator>'
+                |====> !=
+Token:                 < $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> <
+Token:                 > $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> >
+Token:               =:= $ 
+Parse Tree:
+|====> <program>
+Token:                == $ 
+Parse Tree:
+|====> <program>
+Token:                 * $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <operator>
+            |====> <operator>'
+                |====> *
+Token:                 + $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <operator>
+            |====> <operator>'
+                |====> +
+                |====> <PlusOp>
+                    |====> sync
+Token:                 / $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <operator>
+            |====> <operator>'
+                |====> /
+Token:                 - $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <operator>
+            |====> <operator>'
+                |====> -
+                |====> <MinusOp>
+                    |====> sync
+Token:                 > $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> >
+Token:                 > $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> >
+Token:                 < $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> <
+Token:                 < $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> <
+Token:                ++ $ 
+Parse Tree:
+|====> <program>
+Token:                =+ $ 
+Parse Tree:
+|====> <program>
+Token:                && $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <operator>
+            |====> <operator>'
+                |====> &&
+Token:                || $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <operator>
+            |====> <operator>'
+                |====> ||
+Token:                => $ 
+Parse Tree:
+|====> <program>
+Token:                =< $ 
+Parse Tree:
+|====> <program>
+Token:                 % $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <operator>
+            |====> <operator>'
+                |====> %
+Token:                 : $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <operator>
+            |====> <operator>'
+                |====> :
+                |====> <colonOp>
+                    |====> sync
+Token:                :: $ 
+Parse Tree:
+|====> <program>
+Token:                -- $ 
+Parse Tree:
+|====> <program>
+Token:                ++ $ 
+Parse Tree:
+|====> <program>
+Token:                 [ $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> [
+Token:                 { $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> {
+Token:                 < $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> <
+Token:                 > $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> >
+Token:                 } $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> }
+Token:                 ] $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> ]
+Token:                 [ $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> [
+Token:                 ] $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> ]
+Token:                _x $ 
+Parse Tree:
+|====> <program>
+Token:                -- $ 
+Parse Tree:
+|====> <program>
+Token:                -- $ 
+Parse Tree:
+|====> <program>
+Token:                _x $ 
+Parse Tree:
+|====> <program>
+Token:               .12 $ 
+Parse Tree:
+|====> <program>
+Token:               0.1 $ 
+Parse Tree:
+|====> <program>
+Token:               123 $ 
+Parse Tree:
+|====> <program>
+Token:             10510 $ 
+Parse Tree:
+|====> <program>
+Token:         3.413E-13 $ 
+Parse Tree:
+|====> <program>
+Token:           3.41E10 $ 
+Parse Tree:
+|====> <program>
+Token:                ++ $ 
+Parse Tree:
+|====> <program>
+Token:              loop $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <type>
+            |====> <type>'
+                |====> <keyword>
+                    |====> <keyword>'
+                        |====> loop
+Token:                 { $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> {
+Token:               int $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <type>
+            |====> <type>'
+                |====> <keyword>
+                    |====> <keyword>'
+                        |====> int
+Token:                _x $ 
+Parse Tree:
+|====> <program>
+Token:                10 $ 
+Parse Tree:
+|====> <program>
+Token:               int $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <type>
+            |====> <type>'
+                |====> <keyword>
+                    |====> <keyword>'
+                        |====> int
+Token:            _rate2 $ 
+Parse Tree:
+|====> <program>
+Token:                 5 $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <digit>
+            |====> <digit>'
+                |====> 5
+Token:             float $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <type>
+            |====> <type>'
+                |====> <keyword>
+                    |====> <keyword>'
+                        |====> float
+Token:             _rate $ 
+Parse Tree:
+|====> <program>
+Token:                =+ $ 
+Parse Tree:
+|====> <program>
+Token:              3.14 $ 
+Parse Tree:
+|====> <program>
+Token:              bool $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <type>
+            |====> <type>'
+                |====> <keyword>
+                    |====> <keyword>'
+                        |====> bool
+Token:           _status $ 
+Parse Tree:
+|====> <program>
+Token:                 : $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <operator>
+            |====> <operator>'
+                |====> :
+                |====> <colonOp>
+                    |====> sync
+Token:              true $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <type>
+            |====> <type>'
+                |====> <keyword>
+                    |====> <keyword>'
+                        |====> true
+Token:                if $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <type>
+            |====> <type>'
+                |====> <keyword>
+                    |====> <keyword>'
+                        |====> if
+Token:           _status $ 
+Parse Tree:
+|====> <program>
+Token:                 { $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> {
+Token:               for $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <type>
+            |====> <type>'
+                |====> <keyword>
+                    |====> <keyword>'
+                        |====> for
+Token:               int $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <type>
+            |====> <type>'
+                |====> <keyword>
+                    |====> <keyword>'
+                        |====> int
+Token:                 0 $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <digit>
+            |====> <digit>'
+                |====> 0
+Token:                 < $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> <
+Token:                 5 $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <digit>
+            |====> <digit>'
+                |====> 5
+Token:                ++ $ 
+Parse Tree:
+|====> <program>
+Token:                 { $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> {
+Token:             _rate $ 
+Parse Tree:
+|====> <program>
+Token:               0.1 $ 
+Parse Tree:
+|====> <program>
+Token:            _rate2 $ 
+Parse Tree:
+|====> <program>
+Token:                 2 $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <digit>
+            |====> <digit>'
+                |====> 2
+Token:                 } $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> }
+Token:            double $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <type>
+            |====> <type>'
+                |====> <keyword>
+                    |====> <keyword>'
+                        |====> double
+Token:            _value $ 
+Parse Tree:
+|====> <program>
+Token:       3.43433E+13 $ 
+Parse Tree:
+|====> <program>
+Token:            _value $ 
+Parse Tree:
+|====> <program>
+Token:          -2.56E-4 $ 
+Parse Tree:
+|====> <program>
+Token:            _value $ 
+Parse Tree:
+|====> <program>
+Token:               1.0 $ 
+Parse Tree:
+|====> <program>
+Token:                 } $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> }
+Token:               int $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <type>
+            |====> <type>'
+                |====> <keyword>
+                    |====> <keyword>'
+                        |====> int
+Token:           _result $ 
+Parse Tree:
+|====> <program>
+Token:                10 $ 
+Parse Tree:
+|====> <program>
+Token:                 + $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <operator>
+            |====> <operator>'
+                |====> +
+                |====> <PlusOp>
+                    |====> sync
+Token:                20 $ 
+Parse Tree:
+|====> <program>
+Token:           _result $ 
+Parse Tree:
+|====> <program>
+Token:                 5 $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <digit>
+            |====> <digit>'
+                |====> 5
+Token:           _result $ 
+Parse Tree:
+|====> <program>
+Token:               100 $ 
+Parse Tree:
+|====> <program>
+Token:           _result $ 
+Parse Tree:
+|====> <program>
+Token:                 3 $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <digit>
+            |====> <digit>'
+                |====> 3
+Token:                if $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <type>
+            |====> <type>'
+                |====> <keyword>
+                    |====> <keyword>'
+                        |====> if
+Token:           _status $ 
+Parse Tree:
+|====> <program>
+Token:                && $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <operator>
+            |====> <operator>'
+                |====> &&
+Token:           _result $ 
+Parse Tree:
+|====> <program>
+Token:                 > $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> >
+Token:                 0 $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <digit>
+            |====> <digit>'
+                |====> 0
+Token:                 { $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> {
+Token:                _x $ 
+Parse Tree:
+|====> <program>
+Token:                 1 $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <digit>
+            |====> <digit>'
+                |====> 1
+Token:                 } $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> }
+Token:             while $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <type>
+            |====> <type>'
+                |====> <keyword>
+                    |====> <keyword>'
+                        |====> while
+Token:                _x $ 
+Parse Tree:
+|====> <program>
+Token:                 > $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> >
+Token:                 0 $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <digit>
+            |====> <digit>'
+                |====> 0
+Token:                 { $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> {
+Token:                _x $ 
+Parse Tree:
+|====> <program>
+Token:                -- $ 
+Parse Tree:
+|====> <program>
+Token:                if $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <type>
+            |====> <type>'
+                |====> <keyword>
+                    |====> <keyword>'
+                        |====> if
+Token:                _x $ 
+Parse Tree:
+|====> <program>
+Token:                 % $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <operator>
+            |====> <operator>'
+                |====> %
+Token:                 2 $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <digit>
+            |====> <digit>'
+                |====> 2
+Token:                == $ 
+Parse Tree:
+|====> <program>
+Token:                 0 $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <digit>
+            |====> <digit>'
+                |====> 0
+Token:                 { $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> {
+Token:             break $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <type>
+            |====> <type>'
+                |====> <keyword>
+                    |====> <keyword>'
+                        |====> break
+Token:                 } $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> }
+Token:                 } $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> }
+Token:            switch $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <type>
+            |====> <type>'
+                |====> <keyword>
+                    |====> <keyword>'
+                        |====> switch
+Token:           _result $ 
+Parse Tree:
+|====> <program>
+Token:                 { $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> {
+Token:              case $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <type>
+            |====> <type>'
+                |====> <keyword>
+                    |====> <keyword>'
+                        |====> case
+Token:                 0 $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <digit>
+            |====> <digit>'
+                |====> 0
+Token:                 : $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <operator>
+            |====> <operator>'
+                |====> :
+                |====> <colonOp>
+                    |====> sync
+Token:          continue $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <type>
+            |====> <type>'
+                |====> <keyword>
+                    |====> <keyword>'
+                        |====> continue
+Token:              case $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <type>
+            |====> <type>'
+                |====> <keyword>
+                    |====> <keyword>'
+                        |====> case
+Token:                 1 $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <digit>
+            |====> <digit>'
+                |====> 1
+Token:                 : $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <operator>
+            |====> <operator>'
+                |====> :
+                |====> <colonOp>
+                    |====> sync
+Token:             break $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <type>
+            |====> <type>'
+                |====> <keyword>
+                    |====> <keyword>'
+                        |====> break
+Token:           default $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <type>
+            |====> <type>'
+                |====> <keyword>
+                    |====> <keyword>'
+                        |====> default
+Token:                 : $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <operator>
+            |====> <operator>'
+                |====> :
+                |====> <colonOp>
+                    |====> sync
+Token:           _result $ 
+Parse Tree:
+|====> <program>
+Token:                42 $ 
+Parse Tree:
+|====> <program>
+Token:                 } $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> }
+Token:           _result $ 
+Parse Tree:
+|====> <program>
+Token:                _x $ 
+Parse Tree:
+|====> <program>
+Token:                 < $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> <
+Token:                 < $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> <
+Token:                 2 $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <digit>
+            |====> <digit>'
+                |====> 2
+Token:           _result $ 
+Parse Tree:
+|====> <program>
+Token:                _x $ 
+Parse Tree:
+|====> <program>
+Token:                 > $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> >
+Token:                 > $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> >
+Token:                 1 $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <digit>
+            |====> <digit>'
+                |====> 1
+Token:           _result $ 
+Parse Tree:
+|====> <program>
+Token:                == $ 
+Parse Tree:
+|====> <program>
+Token:                 5 $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <digit>
+            |====> <digit>'
+                |====> 5
+Token:                 } $ 
+Parse Tree:
+|====> <program>
+    |====> <program>'
+        |====> <punctuation>
+            |====> <punctuation>'
+                |====> }

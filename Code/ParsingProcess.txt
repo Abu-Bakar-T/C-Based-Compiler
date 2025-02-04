@@ -1,0 +1,1532 @@
+Parsing line 3: !=
+Stack               Input               Action
+<program> $         != $                Expand: <program> ->  <program>'
+<program>' $        != $                Expand: <program>' -> <operator>
+<operator> $        != $                Expand: <operator> ->  <operator>'
+<operator>' $       != $                Expand: <operator>' -> !=
+!= $                != $                Match: !=
+Match: !=
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 4: <
+Stack               Input               Action
+<program> $         < $                 Expand: <program> ->  <program>'
+<program>' $        < $                 Expand: <program>' -> <punctuation>
+<punctuation> $     < $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    < $                 Expand: <punctuation>' -> <
+< $                 < $                 Match: <
+Match: <
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 5: >
+Stack               Input               Action
+<program> $         > $                 Expand: <program> ->  <program>'
+<program>' $        > $                 Expand: <program>' -> <punctuation>
+<punctuation> $     > $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    > $                 Expand: <punctuation>' -> >
+> $                 > $                 Match: >
+Match: >
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 6: =:=
+Stack               Input               Action
+<program> $         =:= $               Error: No rule for '<program>' with token '=:='. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 7: ==
+Stack               Input               Action
+<program> $         == $                Error: No rule for '<program>' with token '=='. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 8: *
+Stack               Input               Action
+<program> $         * $                 Expand: <program> ->  <program>'
+<program>' $        * $                 Expand: <program>' -> <operator>
+<operator> $        * $                 Expand: <operator> ->  <operator>'
+<operator>' $       * $                 Expand: <operator>' -> *
+* $                 * $                 Match: *
+Match: *
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 9: +
+Stack               Input               Action
+<program> $         + $                 Expand: <program> ->  <program>'
+<program>' $        + $                 Expand: <program>' -> <operator>
+<operator> $        + $                 Expand: <operator> ->  <operator>'
+<operator>' $       + $                 Expand: <operator>' -> + <PlusOp>
++ <PlusOp> $        + $                 Match: +
+Match: +
+<PlusOp> $          $                   Expand: <PlusOp> -> sync
+sync $              $                   Error: Unexpected token '$'. Expected: 'sync'.
+Parsing failed.
+
+Parsing line 10: /
+Stack               Input               Action
+<program> $         / $                 Expand: <program> ->  <program>'
+<program>' $        / $                 Expand: <program>' -> <operator>
+<operator> $        / $                 Expand: <operator> ->  <operator>'
+<operator>' $       / $                 Expand: <operator>' -> /
+/ $                 / $                 Match: /
+Match: /
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 11: -
+Stack               Input               Action
+<program> $         - $                 Expand: <program> ->  <program>'
+<program>' $        - $                 Expand: <program>' -> <operator>
+<operator> $        - $                 Expand: <operator> ->  <operator>'
+<operator>' $       - $                 Expand: <operator>' -> - <MinusOp>
+- <MinusOp> $       - $                 Match: -
+Match: -
+<MinusOp> $         $                   Expand: <MinusOp> -> sync
+sync $              $                   Error: Unexpected token '$'. Expected: 'sync'.
+Parsing failed.
+
+Parsing line 12: >
+Stack               Input               Action
+<program> $         > $                 Expand: <program> ->  <program>'
+<program>' $        > $                 Expand: <program>' -> <punctuation>
+<punctuation> $     > $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    > $                 Expand: <punctuation>' -> >
+> $                 > $                 Match: >
+Match: >
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 13: >
+Stack               Input               Action
+<program> $         > $                 Expand: <program> ->  <program>'
+<program>' $        > $                 Expand: <program>' -> <punctuation>
+<punctuation> $     > $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    > $                 Expand: <punctuation>' -> >
+> $                 > $                 Match: >
+Match: >
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 14: <
+Stack               Input               Action
+<program> $         < $                 Expand: <program> ->  <program>'
+<program>' $        < $                 Expand: <program>' -> <punctuation>
+<punctuation> $     < $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    < $                 Expand: <punctuation>' -> <
+< $                 < $                 Match: <
+Match: <
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 15: <
+Stack               Input               Action
+<program> $         < $                 Expand: <program> ->  <program>'
+<program>' $        < $                 Expand: <program>' -> <punctuation>
+<punctuation> $     < $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    < $                 Expand: <punctuation>' -> <
+< $                 < $                 Match: <
+Match: <
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 16: ++
+Stack               Input               Action
+<program> $         ++ $                Error: No rule for '<program>' with token '++'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 17: =+
+Stack               Input               Action
+<program> $         =+ $                Error: No rule for '<program>' with token '=+'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 18: &&
+Stack               Input               Action
+<program> $         && $                Expand: <program> ->  <program>'
+<program>' $        && $                Expand: <program>' -> <operator>
+<operator> $        && $                Expand: <operator> ->  <operator>'
+<operator>' $       && $                Expand: <operator>' -> &&
+&& $                && $                Match: &&
+Match: &&
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 19: ||
+Stack               Input               Action
+<program> $         || $                Expand: <program> ->  <program>'
+<program>' $        || $                Expand: <program>' -> <operator>
+<operator> $        || $                Expand: <operator> ->  <operator>'
+<operator>' $       || $                Expand: <operator>' -> ||
+|| $                || $                Match: ||
+Match: ||
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 20: =>
+Stack               Input               Action
+<program> $         => $                Error: No rule for '<program>' with token '=>'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 21: =<
+Stack               Input               Action
+<program> $         =< $                Error: No rule for '<program>' with token '=<'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 22: %
+Stack               Input               Action
+<program> $         % $                 Expand: <program> ->  <program>'
+<program>' $        % $                 Expand: <program>' -> <operator>
+<operator> $        % $                 Expand: <operator> ->  <operator>'
+<operator>' $       % $                 Expand: <operator>' -> %
+% $                 % $                 Match: %
+Match: %
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 23: :
+Stack               Input               Action
+<program> $         : $                 Expand: <program> ->  <program>'
+<program>' $        : $                 Expand: <program>' -> <operator>
+<operator> $        : $                 Expand: <operator> ->  <operator>'
+<operator>' $       : $                 Expand: <operator>' -> : <colonOp>
+: <colonOp> $       : $                 Match: :
+Match: :
+<colonOp> $         $                   Expand: <colonOp> -> sync
+sync $              $                   Error: Unexpected token '$'. Expected: 'sync'.
+Parsing failed.
+
+Parsing line 24: ::
+Stack               Input               Action
+<program> $         :: $                Error: No rule for '<program>' with token '::'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 25: --
+Stack               Input               Action
+<program> $         -- $                Error: No rule for '<program>' with token '--'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 26: ++
+Stack               Input               Action
+<program> $         ++ $                Error: No rule for '<program>' with token '++'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 27: [
+Stack               Input               Action
+<program> $         [ $                 Expand: <program> ->  <program>'
+<program>' $        [ $                 Expand: <program>' -> <punctuation>
+<punctuation> $     [ $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    [ $                 Expand: <punctuation>' -> [
+[ $                 [ $                 Match: [
+Match: [
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 28: {
+Stack               Input               Action
+<program> $         { $                 Expand: <program> ->  <program>'
+<program>' $        { $                 Expand: <program>' -> <punctuation>
+<punctuation> $     { $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    { $                 Expand: <punctuation>' -> {
+{ $                 { $                 Match: {
+Match: {
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 29: <
+Stack               Input               Action
+<program> $         < $                 Expand: <program> ->  <program>'
+<program>' $        < $                 Expand: <program>' -> <punctuation>
+<punctuation> $     < $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    < $                 Expand: <punctuation>' -> <
+< $                 < $                 Match: <
+Match: <
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 30: >
+Stack               Input               Action
+<program> $         > $                 Expand: <program> ->  <program>'
+<program>' $        > $                 Expand: <program>' -> <punctuation>
+<punctuation> $     > $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    > $                 Expand: <punctuation>' -> >
+> $                 > $                 Match: >
+Match: >
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 31: }
+Stack               Input               Action
+<program> $         } $                 Expand: <program> ->  <program>'
+<program>' $        } $                 Expand: <program>' -> <punctuation>
+<punctuation> $     } $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    } $                 Expand: <punctuation>' -> }
+} $                 } $                 Match: }
+Match: }
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 32: ]
+Stack               Input               Action
+<program> $         ] $                 Expand: <program> ->  <program>'
+<program>' $        ] $                 Expand: <program>' -> <punctuation>
+<punctuation> $     ] $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    ] $                 Expand: <punctuation>' -> ]
+] $                 ] $                 Match: ]
+Match: ]
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 33: [
+Stack               Input               Action
+<program> $         [ $                 Expand: <program> ->  <program>'
+<program>' $        [ $                 Expand: <program>' -> <punctuation>
+<punctuation> $     [ $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    [ $                 Expand: <punctuation>' -> [
+[ $                 [ $                 Match: [
+Match: [
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 34: ]
+Stack               Input               Action
+<program> $         ] $                 Expand: <program> ->  <program>'
+<program>' $        ] $                 Expand: <program>' -> <punctuation>
+<punctuation> $     ] $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    ] $                 Expand: <punctuation>' -> ]
+] $                 ] $                 Match: ]
+Match: ]
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 35: _x
+Stack               Input               Action
+<program> $         _x $                Error: No rule for '<program>' with token '_x'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 36: --
+Stack               Input               Action
+<program> $         -- $                Error: No rule for '<program>' with token '--'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 37: --
+Stack               Input               Action
+<program> $         -- $                Error: No rule for '<program>' with token '--'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 38: _x
+Stack               Input               Action
+<program> $         _x $                Error: No rule for '<program>' with token '_x'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 39: .12
+Stack               Input               Action
+<program> $         .12 $               Error: No rule for '<program>' with token '.12'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 40: 0.1
+Stack               Input               Action
+<program> $         0.1 $               Error: No rule for '<program>' with token '0.1'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 41: 123
+Stack               Input               Action
+<program> $         123 $               Error: No rule for '<program>' with token '123'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 42: 10510
+Stack               Input               Action
+<program> $         10510 $             Error: No rule for '<program>' with token '10510'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 43: 3.413E-13
+Stack               Input               Action
+<program> $         3.413E-13 $         Error: No rule for '<program>' with token '3.413E-13'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 44: 3.41E10
+Stack               Input               Action
+<program> $         3.41E10 $           Error: No rule for '<program>' with token '3.41E10'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 45: ++
+Stack               Input               Action
+<program> $         ++ $                Error: No rule for '<program>' with token '++'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 46: loop
+Stack               Input               Action
+<program> $         loop $              Expand: <program> ->  <program>'
+<program>' $        loop $              Expand: <program>' -> <type>
+<type> $            loop $              Expand: <type> ->  <type>'
+<type>' $           loop $              Expand: <type>' -> <keyword>
+<keyword> $         loop $              Expand: <keyword> ->  <keyword>'
+<keyword>' $        loop $              Expand: <keyword>' -> loop
+loop $              loop $              Match: loop
+Match: loop
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 47: {
+Stack               Input               Action
+<program> $         { $                 Expand: <program> ->  <program>'
+<program>' $        { $                 Expand: <program>' -> <punctuation>
+<punctuation> $     { $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    { $                 Expand: <punctuation>' -> {
+{ $                 { $                 Match: {
+Match: {
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 48: int
+Stack               Input               Action
+<program> $         int $               Expand: <program> ->  <program>'
+<program>' $        int $               Expand: <program>' -> <type>
+<type> $            int $               Expand: <type> ->  <type>'
+<type>' $           int $               Expand: <type>' -> <keyword>
+<keyword> $         int $               Expand: <keyword> ->  <keyword>'
+<keyword>' $        int $               Expand: <keyword>' -> int
+int $               int $               Match: int
+Match: int
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 49: _x
+Stack               Input               Action
+<program> $         _x $                Error: No rule for '<program>' with token '_x'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 50: 10
+Stack               Input               Action
+<program> $         10 $                Error: No rule for '<program>' with token '10'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 51: int
+Stack               Input               Action
+<program> $         int $               Expand: <program> ->  <program>'
+<program>' $        int $               Expand: <program>' -> <type>
+<type> $            int $               Expand: <type> ->  <type>'
+<type>' $           int $               Expand: <type>' -> <keyword>
+<keyword> $         int $               Expand: <keyword> ->  <keyword>'
+<keyword>' $        int $               Expand: <keyword>' -> int
+int $               int $               Match: int
+Match: int
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 52: _rate2
+Stack               Input               Action
+<program> $         _rate2 $            Error: No rule for '<program>' with token '_rate2'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 53: 5
+Stack               Input               Action
+<program> $         5 $                 Expand: <program> ->  <program>'
+<program>' $        5 $                 Expand: <program>' -> <digit>
+<digit> $           5 $                 Expand: <digit> ->  <digit>'
+<digit>' $          5 $                 Expand: <digit>' -> 5
+5 $                 5 $                 Match: 5
+Match: 5
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 54: float
+Stack               Input               Action
+<program> $         float $             Expand: <program> ->  <program>'
+<program>' $        float $             Expand: <program>' -> <type>
+<type> $            float $             Expand: <type> ->  <type>'
+<type>' $           float $             Expand: <type>' -> <keyword>
+<keyword> $         float $             Expand: <keyword> ->  <keyword>'
+<keyword>' $        float $             Expand: <keyword>' -> float
+float $             float $             Match: float
+Match: float
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 55: _rate
+Stack               Input               Action
+<program> $         _rate $             Error: No rule for '<program>' with token '_rate'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 56: =+
+Stack               Input               Action
+<program> $         =+ $                Error: No rule for '<program>' with token '=+'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 57: 3.14
+Stack               Input               Action
+<program> $         3.14 $              Error: No rule for '<program>' with token '3.14'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 58: bool
+Stack               Input               Action
+<program> $         bool $              Expand: <program> ->  <program>'
+<program>' $        bool $              Expand: <program>' -> <type>
+<type> $            bool $              Expand: <type> ->  <type>'
+<type>' $           bool $              Expand: <type>' -> <keyword>
+<keyword> $         bool $              Expand: <keyword> ->  <keyword>'
+<keyword>' $        bool $              Expand: <keyword>' -> bool
+bool $              bool $              Match: bool
+Match: bool
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 59: _status
+Stack               Input               Action
+<program> $         _status $           Error: No rule for '<program>' with token '_status'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 60: :
+Stack               Input               Action
+<program> $         : $                 Expand: <program> ->  <program>'
+<program>' $        : $                 Expand: <program>' -> <operator>
+<operator> $        : $                 Expand: <operator> ->  <operator>'
+<operator>' $       : $                 Expand: <operator>' -> : <colonOp>
+: <colonOp> $       : $                 Match: :
+Match: :
+<colonOp> $         $                   Expand: <colonOp> -> sync
+sync $              $                   Error: Unexpected token '$'. Expected: 'sync'.
+Parsing failed.
+
+Parsing line 61: true
+Stack               Input               Action
+<program> $         true $              Expand: <program> ->  <program>'
+<program>' $        true $              Expand: <program>' -> <type>
+<type> $            true $              Expand: <type> ->  <type>'
+<type>' $           true $              Expand: <type>' -> <keyword>
+<keyword> $         true $              Expand: <keyword> ->  <keyword>'
+<keyword>' $        true $              Expand: <keyword>' -> true
+true $              true $              Match: true
+Match: true
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 62: if
+Stack               Input               Action
+<program> $         if $                Expand: <program> ->  <program>'
+<program>' $        if $                Expand: <program>' -> <type>
+<type> $            if $                Expand: <type> ->  <type>'
+<type>' $           if $                Expand: <type>' -> <keyword>
+<keyword> $         if $                Expand: <keyword> ->  <keyword>'
+<keyword>' $        if $                Expand: <keyword>' -> if
+if $                if $                Match: if
+Match: if
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 63: _status
+Stack               Input               Action
+<program> $         _status $           Error: No rule for '<program>' with token '_status'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 64: {
+Stack               Input               Action
+<program> $         { $                 Expand: <program> ->  <program>'
+<program>' $        { $                 Expand: <program>' -> <punctuation>
+<punctuation> $     { $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    { $                 Expand: <punctuation>' -> {
+{ $                 { $                 Match: {
+Match: {
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 65: for
+Stack               Input               Action
+<program> $         for $               Expand: <program> ->  <program>'
+<program>' $        for $               Expand: <program>' -> <type>
+<type> $            for $               Expand: <type> ->  <type>'
+<type>' $           for $               Expand: <type>' -> <keyword>
+<keyword> $         for $               Expand: <keyword> ->  <keyword>'
+<keyword>' $        for $               Expand: <keyword>' -> for
+for $               for $               Match: for
+Match: for
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 66: int
+Stack               Input               Action
+<program> $         int $               Expand: <program> ->  <program>'
+<program>' $        int $               Expand: <program>' -> <type>
+<type> $            int $               Expand: <type> ->  <type>'
+<type>' $           int $               Expand: <type>' -> <keyword>
+<keyword> $         int $               Expand: <keyword> ->  <keyword>'
+<keyword>' $        int $               Expand: <keyword>' -> int
+int $               int $               Match: int
+Match: int
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 67: 0
+Stack               Input               Action
+<program> $         0 $                 Expand: <program> ->  <program>'
+<program>' $        0 $                 Expand: <program>' -> <digit>
+<digit> $           0 $                 Expand: <digit> ->  <digit>'
+<digit>' $          0 $                 Expand: <digit>' -> 0
+0 $                 0 $                 Match: 0
+Match: 0
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 68: <
+Stack               Input               Action
+<program> $         < $                 Expand: <program> ->  <program>'
+<program>' $        < $                 Expand: <program>' -> <punctuation>
+<punctuation> $     < $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    < $                 Expand: <punctuation>' -> <
+< $                 < $                 Match: <
+Match: <
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 69: 5
+Stack               Input               Action
+<program> $         5 $                 Expand: <program> ->  <program>'
+<program>' $        5 $                 Expand: <program>' -> <digit>
+<digit> $           5 $                 Expand: <digit> ->  <digit>'
+<digit>' $          5 $                 Expand: <digit>' -> 5
+5 $                 5 $                 Match: 5
+Match: 5
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 70: ++
+Stack               Input               Action
+<program> $         ++ $                Error: No rule for '<program>' with token '++'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 71: {
+Stack               Input               Action
+<program> $         { $                 Expand: <program> ->  <program>'
+<program>' $        { $                 Expand: <program>' -> <punctuation>
+<punctuation> $     { $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    { $                 Expand: <punctuation>' -> {
+{ $                 { $                 Match: {
+Match: {
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 72: _rate
+Stack               Input               Action
+<program> $         _rate $             Error: No rule for '<program>' with token '_rate'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 73: 0.1
+Stack               Input               Action
+<program> $         0.1 $               Error: No rule for '<program>' with token '0.1'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 74: _rate2
+Stack               Input               Action
+<program> $         _rate2 $            Error: No rule for '<program>' with token '_rate2'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 75: 2
+Stack               Input               Action
+<program> $         2 $                 Expand: <program> ->  <program>'
+<program>' $        2 $                 Expand: <program>' -> <digit>
+<digit> $           2 $                 Expand: <digit> ->  <digit>'
+<digit>' $          2 $                 Expand: <digit>' -> 2
+2 $                 2 $                 Match: 2
+Match: 2
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 76: }
+Stack               Input               Action
+<program> $         } $                 Expand: <program> ->  <program>'
+<program>' $        } $                 Expand: <program>' -> <punctuation>
+<punctuation> $     } $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    } $                 Expand: <punctuation>' -> }
+} $                 } $                 Match: }
+Match: }
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 77: double
+Stack               Input               Action
+<program> $         double $            Expand: <program> ->  <program>'
+<program>' $        double $            Expand: <program>' -> <type>
+<type> $            double $            Expand: <type> ->  <type>'
+<type>' $           double $            Expand: <type>' -> <keyword>
+<keyword> $         double $            Expand: <keyword> ->  <keyword>'
+<keyword>' $        double $            Expand: <keyword>' -> double
+double $            double $            Match: double
+Match: double
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 78: _value
+Stack               Input               Action
+<program> $         _value $            Error: No rule for '<program>' with token '_value'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 79: 3.43433E+13
+Stack               Input               Action
+<program> $         3.43433E+13 $       Error: No rule for '<program>' with token '3.43433E+13'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 80: _value
+Stack               Input               Action
+<program> $         _value $            Error: No rule for '<program>' with token '_value'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 81: -2.56E-4
+Stack               Input               Action
+<program> $         -2.56E-4 $          Error: No rule for '<program>' with token '-2.56E-4'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 82: _value
+Stack               Input               Action
+<program> $         _value $            Error: No rule for '<program>' with token '_value'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 83: 1.0
+Stack               Input               Action
+<program> $         1.0 $               Error: No rule for '<program>' with token '1.0'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 84: }
+Stack               Input               Action
+<program> $         } $                 Expand: <program> ->  <program>'
+<program>' $        } $                 Expand: <program>' -> <punctuation>
+<punctuation> $     } $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    } $                 Expand: <punctuation>' -> }
+} $                 } $                 Match: }
+Match: }
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 85: int
+Stack               Input               Action
+<program> $         int $               Expand: <program> ->  <program>'
+<program>' $        int $               Expand: <program>' -> <type>
+<type> $            int $               Expand: <type> ->  <type>'
+<type>' $           int $               Expand: <type>' -> <keyword>
+<keyword> $         int $               Expand: <keyword> ->  <keyword>'
+<keyword>' $        int $               Expand: <keyword>' -> int
+int $               int $               Match: int
+Match: int
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 86: _result
+Stack               Input               Action
+<program> $         _result $           Error: No rule for '<program>' with token '_result'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 87: 10
+Stack               Input               Action
+<program> $         10 $                Error: No rule for '<program>' with token '10'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 88: +
+Stack               Input               Action
+<program> $         + $                 Expand: <program> ->  <program>'
+<program>' $        + $                 Expand: <program>' -> <operator>
+<operator> $        + $                 Expand: <operator> ->  <operator>'
+<operator>' $       + $                 Expand: <operator>' -> + <PlusOp>
++ <PlusOp> $        + $                 Match: +
+Match: +
+<PlusOp> $          $                   Expand: <PlusOp> -> sync
+sync $              $                   Error: Unexpected token '$'. Expected: 'sync'.
+Parsing failed.
+
+Parsing line 89: 20
+Stack               Input               Action
+<program> $         20 $                Error: No rule for '<program>' with token '20'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 90: _result
+Stack               Input               Action
+<program> $         _result $           Error: No rule for '<program>' with token '_result'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 91: 5
+Stack               Input               Action
+<program> $         5 $                 Expand: <program> ->  <program>'
+<program>' $        5 $                 Expand: <program>' -> <digit>
+<digit> $           5 $                 Expand: <digit> ->  <digit>'
+<digit>' $          5 $                 Expand: <digit>' -> 5
+5 $                 5 $                 Match: 5
+Match: 5
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 92: _result
+Stack               Input               Action
+<program> $         _result $           Error: No rule for '<program>' with token '_result'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 93: 100
+Stack               Input               Action
+<program> $         100 $               Error: No rule for '<program>' with token '100'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 94: _result
+Stack               Input               Action
+<program> $         _result $           Error: No rule for '<program>' with token '_result'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 95: 3
+Stack               Input               Action
+<program> $         3 $                 Expand: <program> ->  <program>'
+<program>' $        3 $                 Expand: <program>' -> <digit>
+<digit> $           3 $                 Expand: <digit> ->  <digit>'
+<digit>' $          3 $                 Expand: <digit>' -> 3
+3 $                 3 $                 Match: 3
+Match: 3
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 96: if
+Stack               Input               Action
+<program> $         if $                Expand: <program> ->  <program>'
+<program>' $        if $                Expand: <program>' -> <type>
+<type> $            if $                Expand: <type> ->  <type>'
+<type>' $           if $                Expand: <type>' -> <keyword>
+<keyword> $         if $                Expand: <keyword> ->  <keyword>'
+<keyword>' $        if $                Expand: <keyword>' -> if
+if $                if $                Match: if
+Match: if
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 97: _status
+Stack               Input               Action
+<program> $         _status $           Error: No rule for '<program>' with token '_status'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 98: &&
+Stack               Input               Action
+<program> $         && $                Expand: <program> ->  <program>'
+<program>' $        && $                Expand: <program>' -> <operator>
+<operator> $        && $                Expand: <operator> ->  <operator>'
+<operator>' $       && $                Expand: <operator>' -> &&
+&& $                && $                Match: &&
+Match: &&
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 99: _result
+Stack               Input               Action
+<program> $         _result $           Error: No rule for '<program>' with token '_result'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 100: >
+Stack               Input               Action
+<program> $         > $                 Expand: <program> ->  <program>'
+<program>' $        > $                 Expand: <program>' -> <punctuation>
+<punctuation> $     > $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    > $                 Expand: <punctuation>' -> >
+> $                 > $                 Match: >
+Match: >
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 101: 0
+Stack               Input               Action
+<program> $         0 $                 Expand: <program> ->  <program>'
+<program>' $        0 $                 Expand: <program>' -> <digit>
+<digit> $           0 $                 Expand: <digit> ->  <digit>'
+<digit>' $          0 $                 Expand: <digit>' -> 0
+0 $                 0 $                 Match: 0
+Match: 0
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 102: {
+Stack               Input               Action
+<program> $         { $                 Expand: <program> ->  <program>'
+<program>' $        { $                 Expand: <program>' -> <punctuation>
+<punctuation> $     { $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    { $                 Expand: <punctuation>' -> {
+{ $                 { $                 Match: {
+Match: {
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 103: _x
+Stack               Input               Action
+<program> $         _x $                Error: No rule for '<program>' with token '_x'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 104: 1
+Stack               Input               Action
+<program> $         1 $                 Expand: <program> ->  <program>'
+<program>' $        1 $                 Expand: <program>' -> <digit>
+<digit> $           1 $                 Expand: <digit> ->  <digit>'
+<digit>' $          1 $                 Expand: <digit>' -> 1
+1 $                 1 $                 Match: 1
+Match: 1
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 105: }
+Stack               Input               Action
+<program> $         } $                 Expand: <program> ->  <program>'
+<program>' $        } $                 Expand: <program>' -> <punctuation>
+<punctuation> $     } $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    } $                 Expand: <punctuation>' -> }
+} $                 } $                 Match: }
+Match: }
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 106: while
+Stack               Input               Action
+<program> $         while $             Expand: <program> ->  <program>'
+<program>' $        while $             Expand: <program>' -> <type>
+<type> $            while $             Expand: <type> ->  <type>'
+<type>' $           while $             Expand: <type>' -> <keyword>
+<keyword> $         while $             Expand: <keyword> ->  <keyword>'
+<keyword>' $        while $             Expand: <keyword>' -> while
+while $             while $             Match: while
+Match: while
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 107: _x
+Stack               Input               Action
+<program> $         _x $                Error: No rule for '<program>' with token '_x'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 108: >
+Stack               Input               Action
+<program> $         > $                 Expand: <program> ->  <program>'
+<program>' $        > $                 Expand: <program>' -> <punctuation>
+<punctuation> $     > $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    > $                 Expand: <punctuation>' -> >
+> $                 > $                 Match: >
+Match: >
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 109: 0
+Stack               Input               Action
+<program> $         0 $                 Expand: <program> ->  <program>'
+<program>' $        0 $                 Expand: <program>' -> <digit>
+<digit> $           0 $                 Expand: <digit> ->  <digit>'
+<digit>' $          0 $                 Expand: <digit>' -> 0
+0 $                 0 $                 Match: 0
+Match: 0
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 110: {
+Stack               Input               Action
+<program> $         { $                 Expand: <program> ->  <program>'
+<program>' $        { $                 Expand: <program>' -> <punctuation>
+<punctuation> $     { $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    { $                 Expand: <punctuation>' -> {
+{ $                 { $                 Match: {
+Match: {
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 111: _x
+Stack               Input               Action
+<program> $         _x $                Error: No rule for '<program>' with token '_x'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 112: --
+Stack               Input               Action
+<program> $         -- $                Error: No rule for '<program>' with token '--'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 113: if
+Stack               Input               Action
+<program> $         if $                Expand: <program> ->  <program>'
+<program>' $        if $                Expand: <program>' -> <type>
+<type> $            if $                Expand: <type> ->  <type>'
+<type>' $           if $                Expand: <type>' -> <keyword>
+<keyword> $         if $                Expand: <keyword> ->  <keyword>'
+<keyword>' $        if $                Expand: <keyword>' -> if
+if $                if $                Match: if
+Match: if
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 114: _x
+Stack               Input               Action
+<program> $         _x $                Error: No rule for '<program>' with token '_x'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 115: %
+Stack               Input               Action
+<program> $         % $                 Expand: <program> ->  <program>'
+<program>' $        % $                 Expand: <program>' -> <operator>
+<operator> $        % $                 Expand: <operator> ->  <operator>'
+<operator>' $       % $                 Expand: <operator>' -> %
+% $                 % $                 Match: %
+Match: %
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 116: 2
+Stack               Input               Action
+<program> $         2 $                 Expand: <program> ->  <program>'
+<program>' $        2 $                 Expand: <program>' -> <digit>
+<digit> $           2 $                 Expand: <digit> ->  <digit>'
+<digit>' $          2 $                 Expand: <digit>' -> 2
+2 $                 2 $                 Match: 2
+Match: 2
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 117: ==
+Stack               Input               Action
+<program> $         == $                Error: No rule for '<program>' with token '=='. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 118: 0
+Stack               Input               Action
+<program> $         0 $                 Expand: <program> ->  <program>'
+<program>' $        0 $                 Expand: <program>' -> <digit>
+<digit> $           0 $                 Expand: <digit> ->  <digit>'
+<digit>' $          0 $                 Expand: <digit>' -> 0
+0 $                 0 $                 Match: 0
+Match: 0
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 119: {
+Stack               Input               Action
+<program> $         { $                 Expand: <program> ->  <program>'
+<program>' $        { $                 Expand: <program>' -> <punctuation>
+<punctuation> $     { $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    { $                 Expand: <punctuation>' -> {
+{ $                 { $                 Match: {
+Match: {
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 120: break
+Stack               Input               Action
+<program> $         break $             Expand: <program> ->  <program>'
+<program>' $        break $             Expand: <program>' -> <type>
+<type> $            break $             Expand: <type> ->  <type>'
+<type>' $           break $             Expand: <type>' -> <keyword>
+<keyword> $         break $             Expand: <keyword> ->  <keyword>'
+<keyword>' $        break $             Expand: <keyword>' -> break
+break $             break $             Match: break
+Match: break
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 121: }
+Stack               Input               Action
+<program> $         } $                 Expand: <program> ->  <program>'
+<program>' $        } $                 Expand: <program>' -> <punctuation>
+<punctuation> $     } $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    } $                 Expand: <punctuation>' -> }
+} $                 } $                 Match: }
+Match: }
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 122: }
+Stack               Input               Action
+<program> $         } $                 Expand: <program> ->  <program>'
+<program>' $        } $                 Expand: <program>' -> <punctuation>
+<punctuation> $     } $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    } $                 Expand: <punctuation>' -> }
+} $                 } $                 Match: }
+Match: }
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 123: switch
+Stack               Input               Action
+<program> $         switch $            Expand: <program> ->  <program>'
+<program>' $        switch $            Expand: <program>' -> <type>
+<type> $            switch $            Expand: <type> ->  <type>'
+<type>' $           switch $            Expand: <type>' -> <keyword>
+<keyword> $         switch $            Expand: <keyword> ->  <keyword>'
+<keyword>' $        switch $            Expand: <keyword>' -> switch
+switch $            switch $            Match: switch
+Match: switch
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 124: _result
+Stack               Input               Action
+<program> $         _result $           Error: No rule for '<program>' with token '_result'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 125: {
+Stack               Input               Action
+<program> $         { $                 Expand: <program> ->  <program>'
+<program>' $        { $                 Expand: <program>' -> <punctuation>
+<punctuation> $     { $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    { $                 Expand: <punctuation>' -> {
+{ $                 { $                 Match: {
+Match: {
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 126: case
+Stack               Input               Action
+<program> $         case $              Expand: <program> ->  <program>'
+<program>' $        case $              Expand: <program>' -> <type>
+<type> $            case $              Expand: <type> ->  <type>'
+<type>' $           case $              Expand: <type>' -> <keyword>
+<keyword> $         case $              Expand: <keyword> ->  <keyword>'
+<keyword>' $        case $              Expand: <keyword>' -> case
+case $              case $              Match: case
+Match: case
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 127: 0
+Stack               Input               Action
+<program> $         0 $                 Expand: <program> ->  <program>'
+<program>' $        0 $                 Expand: <program>' -> <digit>
+<digit> $           0 $                 Expand: <digit> ->  <digit>'
+<digit>' $          0 $                 Expand: <digit>' -> 0
+0 $                 0 $                 Match: 0
+Match: 0
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 128: :
+Stack               Input               Action
+<program> $         : $                 Expand: <program> ->  <program>'
+<program>' $        : $                 Expand: <program>' -> <operator>
+<operator> $        : $                 Expand: <operator> ->  <operator>'
+<operator>' $       : $                 Expand: <operator>' -> : <colonOp>
+: <colonOp> $       : $                 Match: :
+Match: :
+<colonOp> $         $                   Expand: <colonOp> -> sync
+sync $              $                   Error: Unexpected token '$'. Expected: 'sync'.
+Parsing failed.
+
+Parsing line 129: continue
+Stack               Input               Action
+<program> $         continue $          Expand: <program> ->  <program>'
+<program>' $        continue $          Expand: <program>' -> <type>
+<type> $            continue $          Expand: <type> ->  <type>'
+<type>' $           continue $          Expand: <type>' -> <keyword>
+<keyword> $         continue $          Expand: <keyword> ->  <keyword>'
+<keyword>' $        continue $          Expand: <keyword>' -> continue
+continue $          continue $          Match: continue
+Match: continue
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 130: case
+Stack               Input               Action
+<program> $         case $              Expand: <program> ->  <program>'
+<program>' $        case $              Expand: <program>' -> <type>
+<type> $            case $              Expand: <type> ->  <type>'
+<type>' $           case $              Expand: <type>' -> <keyword>
+<keyword> $         case $              Expand: <keyword> ->  <keyword>'
+<keyword>' $        case $              Expand: <keyword>' -> case
+case $              case $              Match: case
+Match: case
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 131: 1
+Stack               Input               Action
+<program> $         1 $                 Expand: <program> ->  <program>'
+<program>' $        1 $                 Expand: <program>' -> <digit>
+<digit> $           1 $                 Expand: <digit> ->  <digit>'
+<digit>' $          1 $                 Expand: <digit>' -> 1
+1 $                 1 $                 Match: 1
+Match: 1
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 132: :
+Stack               Input               Action
+<program> $         : $                 Expand: <program> ->  <program>'
+<program>' $        : $                 Expand: <program>' -> <operator>
+<operator> $        : $                 Expand: <operator> ->  <operator>'
+<operator>' $       : $                 Expand: <operator>' -> : <colonOp>
+: <colonOp> $       : $                 Match: :
+Match: :
+<colonOp> $         $                   Expand: <colonOp> -> sync
+sync $              $                   Error: Unexpected token '$'. Expected: 'sync'.
+Parsing failed.
+
+Parsing line 133: break
+Stack               Input               Action
+<program> $         break $             Expand: <program> ->  <program>'
+<program>' $        break $             Expand: <program>' -> <type>
+<type> $            break $             Expand: <type> ->  <type>'
+<type>' $           break $             Expand: <type>' -> <keyword>
+<keyword> $         break $             Expand: <keyword> ->  <keyword>'
+<keyword>' $        break $             Expand: <keyword>' -> break
+break $             break $             Match: break
+Match: break
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 134: default
+Stack               Input               Action
+<program> $         default $           Expand: <program> ->  <program>'
+<program>' $        default $           Expand: <program>' -> <type>
+<type> $            default $           Expand: <type> ->  <type>'
+<type>' $           default $           Expand: <type>' -> <keyword>
+<keyword> $         default $           Expand: <keyword> ->  <keyword>'
+<keyword>' $        default $           Expand: <keyword>' -> default
+default $           default $           Match: default
+Match: default
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 135: :
+Stack               Input               Action
+<program> $         : $                 Expand: <program> ->  <program>'
+<program>' $        : $                 Expand: <program>' -> <operator>
+<operator> $        : $                 Expand: <operator> ->  <operator>'
+<operator>' $       : $                 Expand: <operator>' -> : <colonOp>
+: <colonOp> $       : $                 Match: :
+Match: :
+<colonOp> $         $                   Expand: <colonOp> -> sync
+sync $              $                   Error: Unexpected token '$'. Expected: 'sync'.
+Parsing failed.
+
+Parsing line 136: _result
+Stack               Input               Action
+<program> $         _result $           Error: No rule for '<program>' with token '_result'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 137: 42
+Stack               Input               Action
+<program> $         42 $                Error: No rule for '<program>' with token '42'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 138: }
+Stack               Input               Action
+<program> $         } $                 Expand: <program> ->  <program>'
+<program>' $        } $                 Expand: <program>' -> <punctuation>
+<punctuation> $     } $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    } $                 Expand: <punctuation>' -> }
+} $                 } $                 Match: }
+Match: }
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 139: _result
+Stack               Input               Action
+<program> $         _result $           Error: No rule for '<program>' with token '_result'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 140: _x
+Stack               Input               Action
+<program> $         _x $                Error: No rule for '<program>' with token '_x'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 141: <
+Stack               Input               Action
+<program> $         < $                 Expand: <program> ->  <program>'
+<program>' $        < $                 Expand: <program>' -> <punctuation>
+<punctuation> $     < $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    < $                 Expand: <punctuation>' -> <
+< $                 < $                 Match: <
+Match: <
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 142: <
+Stack               Input               Action
+<program> $         < $                 Expand: <program> ->  <program>'
+<program>' $        < $                 Expand: <program>' -> <punctuation>
+<punctuation> $     < $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    < $                 Expand: <punctuation>' -> <
+< $                 < $                 Match: <
+Match: <
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 143: 2
+Stack               Input               Action
+<program> $         2 $                 Expand: <program> ->  <program>'
+<program>' $        2 $                 Expand: <program>' -> <digit>
+<digit> $           2 $                 Expand: <digit> ->  <digit>'
+<digit>' $          2 $                 Expand: <digit>' -> 2
+2 $                 2 $                 Match: 2
+Match: 2
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 144: _result
+Stack               Input               Action
+<program> $         _result $           Error: No rule for '<program>' with token '_result'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 145: _x
+Stack               Input               Action
+<program> $         _x $                Error: No rule for '<program>' with token '_x'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 146: >
+Stack               Input               Action
+<program> $         > $                 Expand: <program> ->  <program>'
+<program>' $        > $                 Expand: <program>' -> <punctuation>
+<punctuation> $     > $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    > $                 Expand: <punctuation>' -> >
+> $                 > $                 Match: >
+Match: >
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 147: >
+Stack               Input               Action
+<program> $         > $                 Expand: <program> ->  <program>'
+<program>' $        > $                 Expand: <program>' -> <punctuation>
+<punctuation> $     > $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    > $                 Expand: <punctuation>' -> >
+> $                 > $                 Match: >
+Match: >
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 148: 1
+Stack               Input               Action
+<program> $         1 $                 Expand: <program> ->  <program>'
+<program>' $        1 $                 Expand: <program>' -> <digit>
+<digit> $           1 $                 Expand: <digit> ->  <digit>'
+<digit>' $          1 $                 Expand: <digit>' -> 1
+1 $                 1 $                 Match: 1
+Match: 1
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 149: _result
+Stack               Input               Action
+<program> $         _result $           Error: No rule for '<program>' with token '_result'. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 150: ==
+Stack               Input               Action
+<program> $         == $                Error: No rule for '<program>' with token '=='. Entering Panic Mode.
+$                   $                   Match: $
+Match: $
+Parsing failed.
+
+Parsing line 151: 5
+Stack               Input               Action
+<program> $         5 $                 Expand: <program> ->  <program>'
+<program>' $        5 $                 Expand: <program>' -> <digit>
+<digit> $           5 $                 Expand: <digit> ->  <digit>'
+<digit>' $          5 $                 Expand: <digit>' -> 5
+5 $                 5 $                 Match: 5
+Match: 5
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+
+Parsing line 152: }
+Stack               Input               Action
+<program> $         } $                 Expand: <program> ->  <program>'
+<program>' $        } $                 Expand: <program>' -> <punctuation>
+<punctuation> $     } $                 Expand: <punctuation> ->  <punctuation>'
+<punctuation>' $    } $                 Expand: <punctuation>' -> }
+} $                 } $                 Match: }
+Match: }
+$                   $                   Match: $
+Match: $
+Input successfully parsed.
+

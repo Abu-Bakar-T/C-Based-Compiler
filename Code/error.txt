@@ -1,0 +1,194 @@
+Error: Invalid token "+=" at line 1
+Error: Invalid token "-=" at line 1
+Error: Invalid token "%=" at line 1
+Error: Invalid token "*=" at line 1
+Error: Invalid token "=" at line 1
+Error: Invalid token "+++" at line 1
+Error: Invalid token "++++" at line 1
+Error: Invalid token "**" at line 1
+Error: Invalid token "---" at line 1
+Error: Invalid token ":::" at line 1
+Error: Invalid token "=::" at line 1
+Error: Invalid token "_-x-" at line 2
+Error: Invalid token "_x--_x" at line 2
+Error: Invalid token "--_x--" at line 2
+Error: Invalid token ".3151+E13" at line 3
+Error: Invalid token ":loop:" at line 4
+Error: Invalid token "i" at line 5
+Error: Invalid token "abc" at line 5
+Error: Invalid token "rate" at line 5
+Error: Invalid token "hello" at line 5
+Error: Invalid token "1rate" at line 5
+Error: Invalid token "=" at line 7
+Error: Invalid token "//" at line 7
+Error: Invalid token "=" at line 8
+Error: Invalid token "=" at line 9
+Error: Invalid token "=" at line 10
+Error: Invalid token "i" at line 13
+Error: Invalid token "=" at line 13
+Error: Invalid token "i" at line 13
+Error: Invalid token "i" at line 13
+Error: Invalid token "+=" at line 14
+Error: Invalid token "*=" at line 15
+Error: Invalid token "=" at line 17
+Error: Invalid token "=" at line 18
+Error: Invalid token "+=" at line 19
+Error: Invalid token "=" at line 22
+Error: Invalid token "/=" at line 23
+Error: Invalid token "=" at line 24
+Error: Invalid token "%=" at line 25
+Error: Invalid token "+=" at line 28
+Error: Invalid token "=" at line 45
+Error: Invalid token "=" at line 48
+Error: Invalid token "=" at line 49
+
+
++++++++++++++++++++++++++++++++++++
+|       Token Error Summary         |
++++++++++++++++++++++++++++++++++++
+Invalid:                      43                            
+Total Tokens (including Invalid) :193                           
+
+
+ Synthethic Errors from parsing 
+
+Error: No rule for '<program>' with token '=:='. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '=='. Entering Panic Mode.
+Parsing failed
+Error: Unexpected token '$'. Expected: 'sync'.
+Parsing failed
+Error: Unexpected token '$'. Expected: 'sync'.
+Parsing failed
+Error: No rule for '<program>' with token '++'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '=+'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '=>'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '=<'. Entering Panic Mode.
+Parsing failed
+Error: Unexpected token '$'. Expected: 'sync'.
+Parsing failed
+Error: No rule for '<program>' with token '::'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '--'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '++'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_x'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '--'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '--'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_x'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '.12'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '0.1'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '123'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '10510'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '3.413E-13'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '3.41E10'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '++'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_x'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '10'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_rate2'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_rate'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '=+'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '3.14'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_status'. Entering Panic Mode.
+Parsing failed
+Error: Unexpected token '$'. Expected: 'sync'.
+Parsing failed
+Error: No rule for '<program>' with token '_status'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '++'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_rate'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '0.1'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_rate2'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_value'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '3.43433E+13'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_value'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '-2.56E-4'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_value'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '1.0'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_result'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '10'. Entering Panic Mode.
+Parsing failed
+Error: Unexpected token '$'. Expected: 'sync'.
+Parsing failed
+Error: No rule for '<program>' with token '20'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_result'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_result'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '100'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_result'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_status'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_result'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_x'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_x'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_x'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '--'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_x'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '=='. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_result'. Entering Panic Mode.
+Parsing failed
+Error: Unexpected token '$'. Expected: 'sync'.
+Parsing failed
+Error: Unexpected token '$'. Expected: 'sync'.
+Parsing failed
+Error: Unexpected token '$'. Expected: 'sync'.
+Parsing failed
+Error: No rule for '<program>' with token '_result'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '42'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_result'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_x'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_result'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_x'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '_result'. Entering Panic Mode.
+Parsing failed
+Error: No rule for '<program>' with token '=='. Entering Panic Mode.
+Parsing failed

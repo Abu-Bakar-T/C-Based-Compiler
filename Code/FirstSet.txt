@@ -1,0 +1,46 @@
+FIRST(<expression>) = { [a-zA-Z] [+-]? _ [ }
+FIRST(<declaration>) = { default int float true protected bool char short signed double class return void export long static loop magar try typename while agar goto break false typeid asm register public namespace struct else operator sizeof this switch new auto enum throw explicit const union private catch case using extern typedef continue virtual do inline for volatile friend unsigned if delete mutable }
+FIRST(<program>) = { unsigned if _ [+-]? default / int || [a-zA-Z] float true [ loop protected bool char signed short double void return class long export < static magar while typename try goto agar typeid false break struct namespace register public asm else sizeof operator this new switch auto enum throw 6 explicit union const catch private case using extern continue typedef virtual inline 9 do for volatile && friend delete mutable 1 2 3 4 5 7 8 0 != - = + >> : * % { > ] } }
+FIRST(<greaterOp>) = { > < ε }
+FIRST(<identifier>) = { [a-zA-Z] _ }
+FIRST(<PlusOp>) = { + ε }
+FIRST(<statement>) = { loop unsigned if [+-]? default int bool char protected true float [a-zA-Z] short signed double class return void export long static magar try typename while agar goto break false typeid asm register public namespace struct else operator sizeof this switch new auto enum throw explicit const union private catch case using extern typedef continue virtual do inline for volatile friend delete mutable _ [ }
+FIRST(<program>') = { [+-]? / default int _ unsigned if true float || [a-zA-Z] [ loop protected bool char signed short double class return void export long < static magar try while typename agar goto break false typeid public asm register namespace struct else operator sizeof this switch new auto enum throw 6 explicit const union private catch case using extern typedef continue virtual 9 do inline for && volatile friend delete mutable 1 2 3 4 5 7 8 0 != - = + >> : * % { > ] } }
+FIRST(<loop>) = { loop }
+FIRST(<term>) = { [a-zA-Z] _ [+-]? [ }
+FIRST(<arguments>) = { [a-zA-Z] _ [+-]? [ }
+FIRST(<keyword>') = { loop static magar goto agar while typename try break false typeid asm register public namespace struct double else operator sizeof this switch new auto enum void class return throw bool protected char explicit const union private catch true float export long case using extern typedef continue virtual do inline for volatile friend signed short unsigned if default int delete mutable }
+FIRST(<conditional>) = { if }
+FIRST(<term>') = { [a-zA-Z] [+-]? _ [ }
+FIRST(<start_identifier>) = { [a-zA-Z] _ }
+FIRST(<rest_expression>) = { ε != < - = / + >> : * && % || }
+FIRST(<start_identifier>') = { [a-zA-Z] _ }
+FIRST(<letter>) = { [a-zA-Z] }
+FIRST(<number>) = { [+-]? }
+FIRST(<MinusOp>') = { ε - }
+FIRST(<statements>) = { loop [+-]? default int unsigned if protected bool char [a-zA-Z] float true signed short double void return class long export static magar while typename try goto agar typeid false break struct namespace public register asm else sizeof operator this new switch auto enum throw explicit union const catch private case using extern continue typedef virtual inline do for friend volatile delete mutable _ [ }
+FIRST(<PlusOp>') = { + ε }
+FIRST(<statement>') = { loop [+-]? default int unsigned if char protected bool [a-zA-Z] float true signed short double void return class long export static magar while typename try goto agar typeid false break struct namespace public register asm else sizeof operator this new switch auto enum throw explicit union const catch private case using extern continue typedef virtual inline do for friend volatile delete mutable _ [ }
+FIRST(<rest_identifier_tail>') = { 1 2 3 4 5 6 7 8 9 0 _ [a-zA-Z] ε }
+FIRST(<type>) = { default int short signed protected bool char true float double void return class long export static loop magar while typename try goto agar typeid false break struct namespace public register asm else sizeof operator this new switch auto enum throw explicit union const catch private case using extern continue typedef virtual inline do for friend volatile if unsigned delete mutable }
+FIRST(<type>') = { default int true float protected bool char signed short double class return void export long static loop magar try typename while agar goto break false typeid asm register public namespace struct else operator sizeof this switch new auto enum throw explicit const union private catch case using extern typedef continue virtual do inline for volatile friend unsigned if delete mutable }
+FIRST(<keyword>) = { static loop magar while typename try goto agar typeid false break struct namespace public register asm double else sizeof operator this new switch auto enum return class void throw char protected bool explicit union const catch private float true long export case using extern continue typedef virtual inline do for friend volatile short signed if unsigned int default delete mutable }
+FIRST(<return_statement>) = { return }
+FIRST(<assignment>) = { [a-zA-Z] _ }
+FIRST(<equalOpRest>) = { ε := = + > < }
+FIRST(<function_call>) = { [a-zA-Z] _ }
+FIRST(<colonOp>') = { : ε }
+FIRST(<digit>) = { 1 2 3 4 5 6 7 8 9 0 }
+FIRST(<digit>') = { 1 2 3 4 5 6 7 8 9 0 }
+FIRST(<operator>) = { != < - = / + >> : * && % || }
+FIRST(<operator>') = { < != = - / + * : >> && % || }
+FIRST(<punctuation>) = { [ { < > ] } }
+FIRST(<punctuation>') = { { [ < > } ] }
+FIRST(<equalOpRest>') = { ε = := + > < }
+FIRST(<rest_expression>') = { ε < != = - / + : >> * && % || }
+FIRST(<greaterOp>') = { > < ε }
+FIRST(<identifier_tail>) = { 1 2 3 4 5 6 7 8 9 0 _ [a-zA-Z] ε }
+FIRST(<identifier_tail>') = { 1 2 3 4 5 6 7 8 9 0 _ [a-zA-Z] ε }
+FIRST(<rest_identifier_tail>) = { 1 2 3 4 5 6 7 8 9 0 _ [a-zA-Z] ε }
+FIRST(<MinusOp>) = { ε - }
+FIRST(<colonOp>) = { : ε }

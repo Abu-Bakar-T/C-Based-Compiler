@@ -1,0 +1,49 @@
+Grammar Contents:
+<program> ->  <program>' | <number> 
+<declaration> ->  <type> <identifier> :
+<keyword>' -> static | loop | magar | while | typename | try | goto | agar | typeid | false | break | struct | namespace | public | register | asm | double | else | sizeof | operator | this | new | switch | auto | enum | return | class | void | throw | char | protected | bool | explicit | union | const | catch | private | float | true | long | export | case | using | extern | continue | typedef | virtual | inline | do | for | friend | volatile | short | signed | if | unsigned | int | default | delete | mutable
+<conditional> ->  if [ <expression> ] { <statements> } [else { <statements> }]
+<term> ->  <term>'
+<loop> ->  loop [ <expression> ] { <statements> }
+<MinusOp>' -> ε | -
+<statements> ->  <statement> <statements>
+<program>' -> <conditional> | <arguments> | <statements> | <statement> | <function_call> | <digit> | <declaration> | <expression> | <term> | <loop> | <assignment> | <return_statement> | <identifier> | <letter> | <operator> | <punctuation> | <type>
+<PlusOp> ->  <PlusOp>'
+<statement> ->  <statement>'
+<assignment> ->  <identifier> =:= <expression> :
+<return_statement> ->  return <expression> :
+<equalOpRest> ->  <equalOpRest>'
+<function_call> ->  <identifier> [ <arguments> ]:
+<arguments> ->  <expression> <rest_arguments>
+<expression> ->  <term> <rest_expression> 
+<start_identifier>' -> <letter> | _
+<rest_expression> ->  <rest_expression>'
+<greaterOp> ->  <greaterOp>'
+<identifier> ->  <start_identifier> <identifier_tail>
+<start_identifier> ->  <start_identifier>'
+<identifier_tail> ->  <identifier_tail>'
+<rest_identifier_tail> ->  <rest_identifier_tail>'
+<letter> ->  [a-zA-Z]
+<number> ->  [+-]? <digit>+ [ . <digit>+] [ e [+-]? <digit>+]
+<colonOp>' -> : | ε
+<digit> ->  <digit>'
+<operator> ->  <operator>'
+<MinusOp> ->  <MinusOp>'
+<colonOp> ->  <colonOp>'
+<punctuation> ->  <punctuation>'
+<rest_identifier_tail>' -> <identifier_tail> | ε
+<type> ->  <type>'
+<keyword> ->  <keyword>'
+<term>' -> <identifier> | <number> | [ <expression> ]
+<statement>' -> <loop> | <conditional> | <declaration> | <type> | <return_statement> | <assignment> | <expression> : | <function_call>
+<PlusOp>' -> + | ε
+<equalOpRest>' -> ε | := | = | + | > | <
+<rest_expression>' -> ε | <operator> <expression>
+<greaterOp>' -> > | < | ε
+<identifier_tail>' -> <digit> <rest_identifier_tail> | _ <rest_identifier_tail> | <letter> <rest_identifier_tail> | ε
+<digit>' -> 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0
+<operator>' -> != | - <MinusOp> | / | < <greaterOp> | + <PlusOp> | = <equalOpRest> | >> | * | && | % | : <colonOp> | ||
+<punctuation>' -> [ | { | < | > | ] | }
+<type>' -> int | short | bool | char | float | double | void | long | <keyword>
+
+
